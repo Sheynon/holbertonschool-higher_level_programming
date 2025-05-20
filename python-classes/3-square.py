@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""defines a class Square with area"""
+
+
 class Square:
+    """Square class with private size attribute and area computation"""
     def __init__(self, size=0):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -8,4 +12,5 @@ class Square:
         self.__size = size
 
     def area(self):
+        """Return the current square area"""
         return self.__size * self.__size

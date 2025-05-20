@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""defines a class Square with size"""
+
+
 class Square:
+    """Square class with private size attribute"""
     def __init__(self, size=0):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
