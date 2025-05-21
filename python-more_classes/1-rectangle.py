@@ -3,9 +3,14 @@
 
 
 class Rectangle:
-    """Rectangle class with private attribute width and height"""
+    """Defines a class Rectangle"""
     def __init__(self, width=0, height=0):
-        """Initialize width and height"""
+        """Initialize a new rectangle
+
+        Args:
+            width (int): width of rectangle
+            height (int): height of rectangle
+        """
         self.width = width
         self.height = height
 
