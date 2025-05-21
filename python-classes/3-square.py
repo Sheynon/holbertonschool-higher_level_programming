@@ -5,6 +5,9 @@
 class Square:
     """Square class with private size attribute and area computation"""
     def __init__(self, size=0):
+        self.size = size
+
+    def size(self, value):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
