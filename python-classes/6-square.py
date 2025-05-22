@@ -14,6 +14,7 @@ class Square:
     def size(self):
         """Getter for size."""
         return self.__size
+
     @property
     def position(self):
         """Getter for position."""
@@ -49,7 +50,7 @@ class Square:
         if self.__size == 0:
             print()
             return
-            
+
         for i in range(self.__position[1]):
             print()
 
