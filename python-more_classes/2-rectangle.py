@@ -24,6 +24,7 @@ class Rectangle:
             int: Width of rectangle
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         """Setter for width
@@ -49,6 +50,7 @@ class Rectangle:
             int: Height of rectangle
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """Setter for height
@@ -73,6 +75,7 @@ class Rectangle:
             int: Area of the rectangle
         """
         return self.__width * self.__height
+
     def perimeter(self):
         """Method to return the perimeter
         Returns:
