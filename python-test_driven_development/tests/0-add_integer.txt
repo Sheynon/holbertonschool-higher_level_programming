@@ -5,6 +5,8 @@
 25
 >>> add_integer(10)
 108
+>>> add_integer(1e102)
+999999999999999977049513265245336628446842719924150006129995974731993452180789911303261294481511546978
 >>> add_integer()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
