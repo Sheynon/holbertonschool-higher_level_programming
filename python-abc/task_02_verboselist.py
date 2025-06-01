@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Extending the Python List with Notifications"""
 
+
 class VerboseList(list):
     """class that inherits from the built-in list"""
 
@@ -21,7 +22,8 @@ class VerboseList(list):
         super().remove(item)
 
     def pop(self, index=None):
-        """define a method that print a message before popping item from the list"""
+        """define a method that print a message
+            before popping item from the list"""
         if index is None:
             item = super().pop()
         else:
