@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """CountedIterator - Keeping Track of Iteration mandatory"""
 
+
 class CountedIterator:
-    """class that encapsulates an iterator and counts the number of elements iterated through"""
+    """class that encapsulates an iterator
+        and counts the number of elements iterated through"""
     def __init__(self, iterable):
         """initializes a CountedIterator with an iterable object"""
         self._iter = iter(iterable)
@@ -13,7 +15,8 @@ class CountedIterator:
         return self
 
     def __next__(self):
-        """returns the next element of the iterator and increment the counter"""
+        """returns the next element of the iterator
+            and increment the counter"""
         item = next(self._iter)
         self._count += 1
         return item
