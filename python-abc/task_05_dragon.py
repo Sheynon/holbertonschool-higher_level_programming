@@ -1,39 +1,26 @@
 #!/usr/bin/env python3
-"""The Enigmatic FlyingFish - Exploring Multiple Inheritance"""
+"""The Mystical Dragon - Mastering Mixins"""
 
-class Fish:
-    """class that represent fish"""
 
-    def swim(self):
-        """define that fish can swim"""
-        print("The fish is swimming")
-
-    def habitat(self):
-        """define that fish live in water"""
-        print("The fish lives in water")
-
-class Bird:
-    """class that represent bird"""
-
-    def fly(self):
-        """define that bird can fly"""
-        print("The bird is flying")
-
-    def habitat(self):
-        """define that bird live in the sky"""
-        print("The bird lives in the sky")
-
-class FlyingFish(Fish, Bird):
-    """class that represent flyingfish"""
+class SwimMixin:
+    """class that add swim method"""
 
     def swim(self):
-        """define that flyingfish can swim"""
-        print("The flying fish is swimming!")
+        """define that the creature can swim"""
+        print("The creature swims!")
+
+
+class FlyMixin:
+    """ class that add fly method"""
 
     def fly(self):
-        """define that flyingfish can fly"""
-        print("The flying fish is soaring!")
+        """define that the creature can fly"""
+        print("The creature flies!")
 
-    def habitat(self):
-        """define that flyingfish can live both in water and in the sky"""
-        print("The flying fish lives both in water and the sky!")
+
+class Dragon(SwimMixin, FlyMixin):
+    """class that represent dragon"""
+
+    def roar(self):
+        """define that dragon can roars"""
+        print("The dragon roars!")
