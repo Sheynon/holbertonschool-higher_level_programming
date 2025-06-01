@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """The Enigmatic FlyingFish - Exploring Multiple Inheritance"""
 
+
 class Fish:
     """class that represent fish"""
 
@@ -12,6 +13,7 @@ class Fish:
         """define that fish live in water"""
         print("The fish lives in water")
 
+
 class Bird:
     """class that represent bird"""
 
@@ -22,6 +24,7 @@ class Bird:
     def habitat(self):
         """define that bird live in the sky"""
         print("The bird lives in the sky")
+
 
 class FlyingFish(Fish, Bird):
     """class that represent flyingfish"""
