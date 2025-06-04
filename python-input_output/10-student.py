@@ -11,7 +11,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        if is not None and isinstance(attrs, list):
+        if attrs is not None and isinstance(attrs, list):
             return {key: getattr(self, key)
                     for key in attrs if hasattr(self, key)}
         else:
