@@ -1,3 +1,4 @@
+-- 9 create a second table and insert value
 CREATE TABLE IF NOT EXISTS second_table (
     id INT,
     name VARCHAR(256),
